@@ -1,0 +1,95 @@
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  display: flex; /* Añadido */
+  flex-direction: column; /* Añadido */
+  height: 100vh; /* Añadido */
+}
+
+nav {
+  background-color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #555;
+  width: 100%;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.link-btn {
+  background-color: #333;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+.link-btn:hover {
+  background-color: #ff3535;
+}
+.dropdown-content button:hover {
+  background-color: #ff3535;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn {
+  background-color: #333;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.dropbtn:hover {
+  background-color: #ee5353;
+}
+
+#iframe-container {
+  flex-grow: 1; /* Añadido */
+}
+
+#content iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  overflow: auto;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <a href="#" class="logo">Mi Sitio</a>
+        <div class="dropdown">
+          <button class="dropbtn">Pagos Electrónicos</button>
+          <div class="dropdown-content">
+            <button
+              class="link-btn"
+              onclick="loadPage('BANELCO - Cob/index.html')"
+            >
+              Banelco Cob
+            </button>
+            <button
+              class="link-btn"
+              onclick="loadPage('BANELCO - Liq/index.html')"
+            >
+              Banelco Liq
+            </button>
+            <button class="link-btn" onclick="loadPage('RAPIPAGO/index.html')">
+              Rapipago
+            </button>
+            <button
+              class="link-btn"
+              onclick="loadPage('MUNICIPALIDAD/index.html')"
+            >
+              Municipalidad
+            </button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Claves Electrónicas</button>
+          <div class="dropdown-content">
+            <button
+              class="link-btn"
+              onclick="loadPage('Extractor de claves/index.html')"
+            >
+              Extractor de claves
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="iframe-container"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
